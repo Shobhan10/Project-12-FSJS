@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 85rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/* ------------------------------ */
+/* ---------- HEADER ------------ */
+/* ------------------------------ */
+
+header {
+    background-color: #636C79;
+    color: #fff;
+}
+
+
+/* ---------- Navbar ------------ */
+
+nav {
+    padding: 2% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+nav div {
+    padding-top: 20px;
+}
+
+nav div img {
+    width: 8rem;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.list li {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+nav .nav-btn {
+    margin-left: 40px;
+    padding: 12px 48px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #7D8188;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    nav .hamburger {
+        display: flex;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .list li {
+        display: none;
+    }
+    nav div {
+        padding-top: 0px;
+    }
+    
+    nav div img {
+        width: 6rem;
+    }
+    nav .nav-btn {
+        margin-left: 0px;
+        padding: 8px 20px;
+    }
+}
+
+/* ---------- Hero section ------------ */
+
+main {
+    padding: 3% 8% 7% 8%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.left img {
+    height: 550px;
+    width: 460px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+main .right{
+    width: 550px;
+    padding-top: 3%;
+}
+
+main .right h1{
+    font-size: 65px;
+    font-family: 'Raleway';
+}
+
+.right article{
+    font-size: 20px;
+    font-weight: 300;
+    width: 510px;
+    margin: 8% 0 7% 0;
+    line-height: 1.7;
+    opacity: 0.6;
+}
+
+.right .form {
+    background-color: #fff;
+    padding: 2px;
+    width: 505px;
+    display: flex;
+    align-items: center;
+}
+
+.form svg {
+   margin-left: 15px;
+}
+
+.form input {
+    border: none;
+    margin: 10px;
+    width: 260px;
+    padding-right: 10px;
+    font-size: 17px;
+    opacity: 0.8;
+    outline: none;
+}
+
+.form-btn {
+    justify-self: end;
+    background-color: #8BB7A2;
+    border: none;
+    padding: 15px 55px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 1275px) {
+    main .right h1 {
+        font-size: 2.8rem;
+        line-height: 50px;
+        max-width: 415px;
+    }
+    .right article {
+        font-size: 1rem;
+        margin-top: 20px;
+        max-width: 415px;
+    }
+    .right .form {
+        width: 400px;
+    }
+    .form input {
+        font-size: 15px;
+        margin: 15px;
+    }
+    .form-btn  {
+        padding: 13px 6px;
+        font-size: 15px;
+        width: 140px;
+        margin: 2px;
+    }
+    .left img {
+        width: 22rem;
+        height: 420px;
+    }
+}
+@media screen and (max-width: 910px) {
+    main {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    main .right {
+        text-align: center;
+        margin-left: 9rem;
+    }
+    main .right h1 {
+        font-size: 2.4rem;
+        line-height: 40px;
+    }
+    main .right article {
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+ }
+
+
+/* ------------------------------ */
+/* ------ Connect Section ------- */
+/* ------------------------------ */
+
+.connect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 15%;
+}
+
+.connect .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .headline{
+    max-width: 600px;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 28px;
+}
+
+.content .headline h2{
+    font-family: 'Raleway';
+}
+
+.content .achievement{
+    width: 18rem;
+}
+
+.achievement h3{
+    font-size: 40px;
+}
+
+.achievement p{
+    color: #808080;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.achievements{
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+.connect .video img{
+    object-fit: cover;
+    object-position: top;
+    width: 1113px;
+    height: 555px;
+    position: relative;   
+}
+
+.connect .video{
+    position: relative;
+}
+
+.video_play_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.video_play {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8bb7a2;
+}
+
+.fa-play {
+    font-size: 20px;
+}
+
+.circle1,
+.circle2 {
+  border: 1px solid #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.circle2 {
+  border: 1px solid #ffffff8c;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1170px) {
+    .connect .video img{
+        width: 890px;
+        height: 443px;  
+    }
+    .video_play_wrapper {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .connect .content .achievements {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 960px) {
+    .connect .video img{
+        width: 600px;
+        height: 300px;  
+    }
+    .video_play_wrapper {
+        transform: scale(0.6);
+    }
+}
+@media screen and (max-width: 670px) {
+    .connect .video img{
+        width: 435px;
+        height: 219px; 
+    }
+    .video_play_wrapper {
+        transform: scale(0.5);
+    }
+}
+
+/* ------------------------------ */
+/* ---------- Features ---------- */
+/* ------------------------------ */
+
+.features{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features .headline {
+    margin: auto;
+    text-align: center;
+}
+
+.features .headline h2{
+    margin-bottom: 5%;
+    font-size: 45px;
+    font-family: 'Raleway';
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8%;
+}
+
+.green-btn{
+    background-color: #8BB7A2;
+    border: none;
+    padding: 15px 55px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.features .content .left{
+    width: 485px;
+}
+
+.features .content .left h2{
+    font-size: 40px;
+    font-family: 'Raleway';
+}
+
+.features .content .left p{
+    color: #808080;
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 5% 0 3% 0;
+}
+
+.features .content .right-1 img{
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.features .content .right-2 img{
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.features .content .right-3 img{
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width: 1180px) {
+    .features .content .left h2 {
+        font-size: 1.8rem;
+    }
+    .features .content .left p {
+        font-size: .9rem;
+    }
+    .features .content .right img {
+        width: 24rem;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .features {
+        gap: 2rem;
+    }
+    .content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+    .features .content .right-2 {
+        order: 1;
+        margin-top: 2rem;
+    }
+    .features .headline {
+        margin-bottom: 4rem;
+    }
+}
+
+/* ------------------------------ */
+/* ----------- Teams ------------ */
+/* ------------------------------ */
+
+.teams{
+    height: 135vh;
+    margin: 3% 8%;
+    margin-top: 10rem;
+}
+
+.teams aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside .heading{
+    font-size: 30px;
+    width: 360px;
+}
+
+.description{
+    width: 500px;
+    font-size: 20px;
+    color: #808080;
+    line-height: 1.7;
+}
+
+.bg img{
+    object-fit: cover;
+    object-position: top;
+    width: 330px;
+    height: 405px;
+}
+
+.bg1 img{
+    object-fit: cover;
+    object-position: center;
+    width: 330px;
+    height: 405px;
+}
+
+.bg2 img{
+    object-fit: cover;
+    object-position: center;
+    width: 330px;
+    height: 405px;
+}
+
+.cards{
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4.1rem;
+    margin-top: 5%;
+}
+
+.card div p{
+    font-size: 17px;
+    width: 300px;
+    color: #808080 ;
+}
+
+.card div h3{
+    font-size: 20px;
+    margin: 4% 0;
+}
+
+.cards + div {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 1080px) {
+    aside .heading{
+        font-size: 22px;
+        width: 330px;
+    }
+    .card div:nth-child(2) {
+        text-align: center;
+    }
+    
+    .description{
+        font-size: 15px;
+        width: 375px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .teams aside {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    aside .heading {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* ------------------------------ */
+/* ----------- Footer ----------- */
+/* ------------------------------ */
+
+footer{
+    background-color: #10181d;
+    color: #fff;
+    padding: 3% 8%;
+}
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #31393E;
+    padding: 2% 0;
+}
+
+#bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4%;
+}
+#bottom h3 {
+    margin-bottom: 10px;
+}
+#bottom ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    color: #808080;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#top .logo img{
+    width: 100px;
+}
+
+#top .social img{
+    padding: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1355px) {
+    footer {
+        margin-top: 40rem;
+    }
+}
+@media screen and (max-width: 880px) {
+    footer {
+        margin-top: 80rem;
+    }
+}
